@@ -6,18 +6,16 @@ This is a simple script that checks the size of public repositories on Github. U
 
 ## Usage
 
-This script accepts a single argument, a Github repository address structured as follows:
+This script takes any number of repository names structured as follows:
 
+```bash
+./repo_size.py [username]/[repo-name] [username]/[repo-name]
 ```
-./repo-size.sh [username]/[repo-name]
-```
-
-Github API returns the repository size in KB. This tool converts it to the largest unit of memory that allows for an integer representation.
 
 ### Example command
 
-```sh
-./repo-size.sh Zedran/repo-size
+```bash
+./repo_size.py Zedran/repo-size torvalds/linux
 ```
 
 # License
